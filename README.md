@@ -17,7 +17,7 @@ npm install @webimpian/zonemta-log-central
 
 Enable the plugin in the ZoneMTA config:
 
-```toml
+```
 # config/plugins/log-central.toml
 ["modules/@webimpian/zonemta-log-central"]
 enabled=["receiver", "main", "sender"]
@@ -48,7 +48,7 @@ and enable it as `["log-central"]` with the same options.
 
 Toggle any of them in the config:
 
-```toml
+```
 ["modules/@webimpian/zonemta-log-central".events]
 queued=false
 raw=true

@@ -1,6 +1,6 @@
 {
     "name": "@webimpian/zonemta-log-central",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "ZoneMTA plugin that ships mail delivery logs (queued, delivered, deferred, bounced) to a Log Central server.",
     "keywords": [
         "zonemta",
