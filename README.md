@@ -11,7 +11,7 @@ Built on [`@webimpian/log-central-node`](https://www.npmjs.com/package/@webimpia
 
 Inside your ZoneMTA application directory:
 
-```bash
+```
 npm install @webimpian/zonemta-log-central
 ```
 
@@ -30,7 +30,7 @@ channel="zonemta"
 
 Alternatively, if you keep local plugins in a `plugins/` folder, drop in a one-line shim as `plugins/log-central.js`:
 
-```js
+```
 module.exports = require('@webimpian/zonemta-log-central');
 ```
 
@@ -71,7 +71,7 @@ If `url`, `token`, or `app` is missing, the plugin logs a warning through ZoneMT
 
 ## Testing
 
-```bash
+```
 npm install
 npm test
 ```
