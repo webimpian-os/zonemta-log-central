@@ -1,6 +1,6 @@
 'use strict';
 
-const { LogCentralClient } = require('@webimpian/log-central-node');
+const { LogCentralClient } = require('@webimpian/node-log-central');
 
 const DEFAULT_EVENTS = {
     queued: true,

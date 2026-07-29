@@ -5,7 +5,7 @@
 
 [ZoneMTA](https://github.com/zone-eu/zone-mta) plugin that ships mail delivery logs to a [Log Central](https://log.dev-aplikasiniaga.com) server: every queued, delivered, deferred, and bounced message becomes a searchable log entry with message-id, recipient, sending zone, and the remote MX response.
 
-Built on [`@webimpian/log-central-node`](https://www.npmjs.com/package/@webimpian/log-central-node) — batched background delivery, capped backoff, and bounded memory, so a Log Central outage can never disrupt mail flow. Hook handlers swallow their own failures and always advance ZoneMTA's plugin chain.
+Built on [`@webimpian/node-log-central`](https://www.npmjs.com/package/@webimpian/node-log-central) — batched background delivery, capped backoff, and bounded memory, so a Log Central outage can never disrupt mail flow. Hook handlers swallow their own failures and always advance ZoneMTA's plugin chain.
 
 ## Installation
 
@@ -64,7 +64,7 @@ raw=true
 | `environment` | `production` | Environment tag on every entry |
 | `channel` | `zonemta` | Log channel shown in the Log Central viewer |
 | `hostname` | `os.hostname()` | Hostname tag on every entry |
-| `batchSize` / `flushInterval` / `maxQueue` | see client | Passed through to [`@webimpian/log-central-node`](https://www.npmjs.com/package/@webimpian/log-central-node) |
+| `batchSize` / `flushInterval` / `maxQueue` | see client | Passed through to [`@webimpian/node-log-central`](https://www.npmjs.com/package/@webimpian/node-log-central) |
 | `events` | all on, `raw` off | Toggle individual hooks (see above) |
 
 If `url`, `token`, or `app` is missing, the plugin logs a warning through ZoneMTA's logger and disables itself — it never prevents ZoneMTA from starting.
